@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube UI</title>
+    <script
+      src="https://kit.fontawesome.com/b3f5308a3b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Header  -->
+    <header class="header">
+      <a href="#" class="header__logo">
+        <i class="fab fa-youtube"></i>
+        YouTube
+      </a>
+      <div class="header__icons">
+        <button class="header__icon"><i class="fas fa-search"></i></button>
+        <button class="header__icon"><i class="fas fa-ellipsis-v"></i></button>
+      </div>
+    </header>
+
+    <!-- Video player -->
+    <section class="player">
+      <video controls src="video/video.mp4" class="player__video"></video>
+    </section>
+
+    <!-- Container for layout -->
+    <section class="container">
+      <!-- Video information & Comments -->
+      <section class="info-and-comments">
+        <!-- Video information -->
+        <section class="info">
+          <!-- Video metadata -->
+          <div class="info__metadata">
+            <ul class="info__hashtags">
+              <li class="info__hashtag">#LoremIpsum</li>
+              <li class="info__hashtag">#DolorSitAmet</li>
+              <li class="info__hashtag">#Consectetur</li>
+            </ul>
+            <div class="info__title-and-btn">
+              <p class="info__title info__title--clamped">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Recusandae id voluptas cumque! Deserunt aliquid fugiat
+                consequatur molestias harum nobis quis iure fugit libero
+                aperiam, totam accusantium doloremque voluptate nostrum minus!
+              </p>
+              <button class="info__more">
+                <i class="fas fa-caret-down"></i>
+              </button>
+            </div>
+            <p class="info__views">1M views 1 month ago</p>
+          </div>
+
+          <!-- Buttons -->
+          <div class="info__btns">
+            <button class="info__btn">
+              <i
+                class="fas fa-thumbs-up info__btn-icon info__btn-icon--active"
+              ></i>
+              1K
+            </button>
+            <button class="info__btn">
+              <i class="fas fa-thumbs-down info__btn-icon"></i>
+              0
+            </button>
+            <button class="info__btn">
+              <i class="fas fa-share info__btn-icon"></i>
+              Share
+            </button>
+            <button class="info__btn">
+              <i class="fas fa-plus info__btn-icon"></i>
+              Save
+            </button>
+            <button class="info__btn">
+              <i class="far fa-flag info__btn-icon"></i>
+              Report
+            </button>
+          </div>
+
+          <!-- Channel -->
+          <div class="info__channel">
+            <div class="channel__metadata">
+              <img
+                src="image/avatar.png"
+                alt="channel's avatar"
+                class="channel__avatar"
+              />
+              <div>
+                <p class="channel__name">Lorem Ipsum</p>
+                <p class="channel__subscribers">1M subscribers</p>
+              </div>
+            </div>
+            <button class="channel__subscribe">subscribe</button>
+          </div>
+        </section>
+
+        <!-- Switch buttons -->
+        <section class="switch">
+          <button class="switch__btn switch__comments switch__btn--active">
+            Comments
+          </button>
+          <button class="switch__btn switch__upNext">Up Next</button>
+        </section>
+
+        <!-- Comments -->
+        <section class="switch-section comments">
+          <h1 class="switch-section__title">Comments</h1>
+          <article class="comment">
+            <img
+              src="image/avatar.png"
+              alt="comment's avatar"
+              class="comment__avatar"
+            />
+            <div>
+              <div class="comment__metadata">
+                <span>Lorem Ipsum</span>
+                <span>1 month ago</span>
+              </div>
+              <p class="comment__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium ipsum sed, odio placeat temporibus quod, similique
+                eius sunt ad eveniet fugit porro commodi itaque at! Magni dolor
+                blanditiis autem maxime.
+              </p>
+              <div>
+                <button class="comment__btn">
+                  <i class="fas fa-thumbs-up"></i>
+                </button>
+                <button class="comment__btn">
+                  <i class="fas fa-thumbs-down"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="comment">
+            <img
+              src="image/avatar.png"
+              alt="comment's avatar"
+              class="comment__avatar"
+            />
+            <div>
+              <div class="comment__metadata">
+                <span>Lorem Ipsum</span>
+                <span>1 month ago</span>
+              </div>
+              <p class="comment__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium ipsum sed, odio placeat temporibus quod, similique
+                eius sunt ad eveniet fugit porro commodi itaque at! Magni dolor
+                blanditiis autem maxime.
+              </p>
+              <div>
+                <button class="comment__btn">
+                  <i class="fas fa-thumbs-up"></i>
+                </button>
+                <button class="comment__btn">
+                  <i class="fas fa-thumbs-down"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="comment">
+            <img
+              src="image/avatar.png"
+              alt="comment's avatar"
+              class="comment__avatar"
+            />
+            <div>
+              <div class="comment__metadata">
+                <span>Lorem Ipsum</span>
+                <span>1 month ago</span>
+              </div>
+              <p class="comment__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium ipsum sed, odio placeat temporibus quod, similique
+                eius sunt ad eveniet fugit porro commodi itaque at! Magni dolor
+                blanditiis autem maxime.
+              </p>
+              <div>
+                <button class="comment__btn">
+                  <i class="fas fa-thumbs-up"></i>
+                </button>
+                <button class="comment__btn">
+                  <i class="fas fa-thumbs-down"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <!-- Up next -->
+      <section class="switch-section upNext switch-section--inactive">
+        <h1 class="switch-section__title">Up next</h1>
+        <ul class="playlist">
+          <li class="playlist-item">
+            <div class="playlist-item__thumbnail">
+              <img
+                src="image/thumbnail.jpg"
+                alt="thumbnail of video in playlist"
+              />
+            </div>
+            <div class="playlist-item__metadata">
+              <p class="playlist-item__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ducimus, suscipit.
+              </p>
+              <p class="playlist-item__channel">Lorem ipsum</p>
+              <p class="playlist-item__views">1M views</p>
+            </div>
+            <button class="playlist-item__more">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+          <li class="playlist-item">
+            <div class="playlist-item__thumbnail">
+              <img
+                src="image/thumbnail.jpg"
+                alt="thumbnail of video in playlist"
+              />
+            </div>
+            <div class="playlist-item__metadata">
+              <p class="playlist-item__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ducimus, suscipit.
+              </p>
+              <p class="playlist-item__channel">Lorem ipsum</p>
+              <p class="playlist-item__views">1M views</p>
+            </div>
+            <button class="playlist-item__more">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+          <li class="playlist-item">
+            <div class="playlist-item__thumbnail">
+              <img
+                src="image/thumbnail.jpg"
+                alt="thumbnail of video in playlist"
+              />
+            </div>
+            <div class="playlist-item__metadata">
+              <p class="playlist-item__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ducimus, suscipit.
+              </p>
+              <p class="playlist-item__channel">Lorem ipsum</p>
+              <p class="playlist-item__views">1M views</p>
+            </div>
+            <button class="playlist-item__more">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</html>
